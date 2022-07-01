@@ -20,6 +20,7 @@ body {
   height: 100%;
   background: #042331;
   transition: all .5s ease;
+  list-style: none;
 }
 .sidebar header {
   font-size: 22px;
@@ -28,6 +29,7 @@ body {
   text-align: center;
   background: #063146;
   user-select: none;
+  list-style: none;
 }
 .sidebar ul a{
   display: block;
@@ -41,11 +43,12 @@ body {
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
-  list-style: none;
 }
 ul li:hover a{
   padding-left: 50px;
+  list-style: none;
 }
 .sidebar ul a i{
   margin-right: 16px;
+  list-style: none;
 }
