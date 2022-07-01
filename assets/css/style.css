@@ -22,7 +22,7 @@ body {
   transition: all .5s ease;
 }
 .nobullet {
-  list-style-type: none;
+  list-style: none;
 }
 .sidebar ul a{
   display: block;
