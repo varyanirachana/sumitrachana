@@ -19,5 +19,10 @@ function updateTimer() {
   '<div>' + h + '<span>Hours</span></div>' +
   '<div>' + m + '<span>Minutes</span></div>' +
   '<div>' + s + '<span>Seconds</span></div>';
+    
+   document.getElementById("timer1")
+  .innerHTML =
+  '<div>' + '<span>Days</span></div>' +
+  '<div>' + '<span>Hours</span></div>' ;
 }
 setInterval('updateTimer()', 1000);
