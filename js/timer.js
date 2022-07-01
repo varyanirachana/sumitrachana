@@ -15,10 +15,10 @@ function updateTimer() {
 
  document.getElementById("timer")
   .innerHTML =
-  '<div>' + d + '<span>Days </span>' +
-  h + '<span>Hours </span>' +
-  m + '<span>Minutes </span>' +
-  s + '<span>Seconds </span></div>';
+  '<div>' + d + '<span>Days </span></div>' +
+  '<div>' + h + '<span>Hours </span></div>' +
+  '<div>' + m + '<span>Minutes </span></div>' +
+  '<div>' + s + '<span>Seconds </span></div>';
     
 }
 setInterval('updateTimer()', 1000);
