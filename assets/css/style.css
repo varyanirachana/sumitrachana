@@ -21,9 +21,6 @@ body {
   background: #042331;
   transition: all .5s ease;
 }
-.nobullet {
-  list-style: none;
-}
 .sidebar ul a{
   display: block;
   height: 100%;
