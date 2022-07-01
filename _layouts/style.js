@@ -1,38 +1,23 @@
-function countdown() {
-    const today = new Date();
-    var offerDate = new Date('30 oct 2021');
+function updateTimer() {
+    future = Date.parse("jun 12, 2022 01:30:00");
+ now = new Date();
+ diff = future - now;
 
-    //If offer ends reset to new value
-    if (today.getSeconds() == offerDate.getSeconds()) {
-        offerDate = resetOfferDate();
-    }
+ days = Math.floor(diff / (1000 * 60 * 60 * 24));
+ hours = Math.floor(diff / (1000 * 60 * 60));
+ mins = Math.floor(diff / (1000 * 60));
+ secs = Math.floor(diff / 1000);
 
-    //offerTime will have the total millseconds 
-    const offerTime = offerDate - today;
+ d = days;
+ h = hours - days * 24;
+ m = mins - hours * 60;
+ s = secs - mins * 60;
 
-    // 1 sec= 1000 ms
-    // 1 min = 60 sec
-    // 1 hour = 60 mins
-    // 1 day = 24 hours
-    const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
-    const offerHours = Math.floor((offerTime / (1000 * 60 * 60) % 24));
-    const offerMins = Math.floor((offerTime / (1000 * 60) % 60));
-    const offerSecs = Math.floor((offerTime / 1000) % 60);
-
-    const days_el = document.getElementById("days_left");
-    days_el.innerHTML = offerDays;
-    const hours_el = document.getElementById("hours_left");
-    hours_el.innerHTML = offerHours;
-    const mins_el = document.getElementById("mins_left");
-    mins_el.innerHTML = offerMins;
-    const secs_el = document.getElementById("secs_left");
-    secs_el.innerHTML = offerSecs;
+ document.getElementById("timer")
+  .innerHTML =
+  '<div>' + d + '<span>Days</span></div>' +
+  '<div>' + h + '<span>Hours</span></div>' +
+  '<div>' + m + '<span>Minutes</span></div>' +
+  '<div>' + s + '<span>Seconds</span></div>';
 }
-
-function resetOfferDate() {
-    const futureDate = new Date();
-    futureDate.setDate(futureDate.getDate() + 15);
-    return futureDate;
-}
-
-setInterval(countdown, 1000);
+setInterval('updateTimer()', 1000);
