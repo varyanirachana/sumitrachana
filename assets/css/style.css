@@ -41,6 +41,7 @@ body {
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
+  list-style: none;
 }
 ul li:hover a{
   padding-left: 50px;
