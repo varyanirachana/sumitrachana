@@ -1,1 +1,1 @@
-SUMIT & RACHANA are tying the knot!!
+SUMIT & RACHANA are tying the knot
