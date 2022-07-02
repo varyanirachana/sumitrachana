@@ -15,8 +15,7 @@ function updateTimer() {
 
  document.getElementById("timer")
   .innerHTML =
-  d + 'Days';
+  d + '<b>Days </b>' + h + '<b>Hours </b>' + m + '<b>Minutes </b>' + s + '<b>Seconds </b>';
   
-    
 }
 setInterval('updateTimer()', 1000);
